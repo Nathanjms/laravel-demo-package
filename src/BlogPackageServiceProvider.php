@@ -6,13 +6,15 @@ use Illuminate\Support\ServiceProvider;
 
 class BlogPackageServiceProvider extends ServiceProvider
 {
-  public function register()
-  {
-    //
-  }
+    public function register()
+    {
+        $this->app->bind('calculator', function ($app) {
+            return new Calculator();
+        });
+    }
 
-  public function boot()
-  {
-    //
-  }
+    public function boot()
+    {
+        //
+    }
 }

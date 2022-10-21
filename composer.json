@@ -16,7 +16,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "JohnDoe\\BlogPackage\\Tests\\": "tests"
+      "NathanJms\\BlogPackage\\Tests\\": "tests"
     }
   },
   "require-dev": {
@@ -27,7 +27,10 @@
     "laravel": {
       "providers": [
         "NathanJms\\BlogPackage\\BlogPackageServiceProvider"
-      ]
+      ],
+      "aliases": {
+        "Calculator": "NathanJms\\BlogPackage\\Facades\\Calculator"
+      }
     }
   }
 }
