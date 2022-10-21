@@ -1,6 +1,6 @@
 <?php
 
-namespace JohnDoe\BlogPackage\Facades;
+namespace NathanJms\BlogPackage\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

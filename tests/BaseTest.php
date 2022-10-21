@@ -1,8 +1,8 @@
 <?php
 
-namespace JohnDoe\BlogPackage\Tests;
+namespace NathanJms\BlogPackage\Tests;
 
-use JohnDoe\BlogPackage\BlogPackageServiceProvider;
+use NathanJms\BlogPackage\BlogPackageServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {

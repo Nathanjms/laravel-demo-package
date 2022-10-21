@@ -3,6 +3,7 @@
 namespace NathanJms\BlogPackage;
 
 use Illuminate\Support\ServiceProvider;
+use NathanJms\BlogPackage\Console\InstallBlogPackage;
 
 class BlogPackageServiceProvider extends ServiceProvider
 {
@@ -15,6 +16,11 @@ class BlogPackageServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        //
+        // Register the command if we are using the application via the CLI
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                InstallBlogPackage::class,
+            ]);
+        }
     }
 }
