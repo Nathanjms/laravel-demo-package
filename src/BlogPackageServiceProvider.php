@@ -20,6 +20,7 @@ class BlogPackageServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 InstallBlogPackage::class,
+                MakeFooCommand::class, // registering the new command
             ]);
         }
     }
