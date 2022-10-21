@@ -1,20 +1,27 @@
 {
-    "name": "nathanjms/blog-package",
-    "description": "A demo package",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Nathan James",
-            "email": "nathan@nathanjms.co.uk"
-        }
-    ],
-    "autoload": {
-      "psr-4": {
-        "Nathanjms\\BlogPackage\\": "src"
-      }
-  },
-    "require-dev": {
-        "orchestra/testbench": "^7.0"
+  "name": "nathanjms/blog-package",
+  "description": "A demo package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nathan James",
+      "email": "nathan@nathanjms.co.uk"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Nathanjms\\BlogPackage\\": "src"
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "NathanJms\\BlogPackage\\BlogPackageServiceProvider"
+      ]
+    }
+  }
 }
